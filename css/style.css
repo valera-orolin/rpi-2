@@ -1,0 +1,146 @@
+body {
+    background-color: #001c29;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 5vh;
+    width: 75vw;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.header {
+    font-weight: 600;
+    font-size: 7vh;
+    background-image: linear-gradient(90deg, #414ae4, #bb52fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#title {
+    font-size: 5vh;
+    font-weight: 500;
+    color: #576070;
+}
+
+#date {
+    font-weight: 500;
+    font-size: 5vh;
+    color: #274e68;
+    background-color: #032235;
+    border-radius: 5vh;
+    border: transparent;
+    width: 14vw;
+    height: 6vh;
+    padding: 1vh;
+    padding-left: 3vh;
+    cursor: inherit;
+}
+::-webkit-input-placeholder { color: #274e68;} 
+:-moz-placeholder { color: #274e68; }
+::-moz-placeholder { color: #274e68; }
+:-ms-input-placeholder { color: #274e68; }
+
+#search {
+    font-weight: 500;
+    font-size: 5vh;
+    color: #274e68;
+    background-color: #032235;
+    border-radius: 5vh;
+    border: transparent;
+    width: 14vw;
+    height: 6vh;
+    padding: 1vh;
+    padding-left: 3vh;
+}
+
+#search:hover {
+    background-image: linear-gradient(90deg, #414ae4, #bb52fc);
+    cursor: pointer;
+    color: #001c29;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+}
+
+.searcher #date + #search {
+    margin-left: 2vw;
+}
+
+#picture, #vid {
+    width: 100%;
+    min-height: 60vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: 1vh solid #032235;
+    border-radius: 5vh;
+    display: none;
+}
+
+#text {
+    text-align: justify;
+    margin-top: 4vh;
+    padding: 5vh;
+    font-size: 3vh;
+    font-weight: 500;
+    color: #274e68;
+    background-color: #032235;
+    border-radius: 5vh;
+}
+
+.bottom {
+    height: 5vh;
+}
+
+#spinner {
+    visibility: hidden;
+    margin-top: 1.5vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    width: 3vh;
+    height: 3vh;
+    border: .7vh solid transparent;
+    border-left: .7vh solid #576070;
+    border-right: .7vh solid #576070;
+    border-bottom: .7vh solid #576070;
+    border-radius: 50px;
+    animation: spin 1s linear infinite
+}
+@keyframes spin{
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

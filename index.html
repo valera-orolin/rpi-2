@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    
+    <div class="container center">
+        <h1 class="header row center">Astronomy Picture of the Day</h1>
+        
+        <div class="searcher row center">
+            <input type="text" placeholder="yyyy-mm-dd" id="date" minlength="10" maxlength="10" required/>
+            <div id="spinner"></div>
+            <div id="search">Search</div>
+        </div>
+        
+        <img id="picture" class="row center">
+        <div class="row center">
+            <iframe id="vid" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div id="title" class="row center">Date</div>
+        <div id="text"></div>
+    </div>
+    
+    <div class="bottom"></div>
+    
+</body>
+</html>
